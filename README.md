@@ -1,10 +1,12 @@
 # Dependências
 
-tsup - compilador do projeto
+fastify - Microframwork responsável pela entrega recebimento de dados web.
 
-tsx - executor typescript do projeto para dev
+tsup - Compilador do projeto
 
-eslint - organizador para manter um padrão de código
+tsx - Executor typescript do projeto para dev
+
+eslint - Organizador para manter um padrão de código
 
 .eslintignore - Ignora pastas selecionadas ao formatar o código do projeto.
 
