@@ -1,9 +1,13 @@
 # Dependências
 
 tsup - compilador do projeto
+
 tsx - executor typescript do projeto para dev
+
 eslint - organizador para manter um padrão de código
+
 .eslintignore - Ignora pastas selecionadas ao formatar o código do projeto.
+
 
 # Tips para estruturar com SOLID
 
