@@ -3,8 +3,13 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
+	"engines": {
+		"node": "19.0.0"
+	},
 	"scripts": {
+		"start": "node ./dist/app.js",
 		"dev": "tsx watch ./src/app.ts",
+		"build": "tsup src",
 		"lint": "eslint --fix .",
 		"test": "vitest"
 	},
@@ -14,7 +19,6 @@
 	"dependencies": {
 		"dotenv": "^16.0.3",
 		"fastify": "^4.16.0",
-		"supertest": "^6.3.3",
 		"zod": "^3.21.4"
 	},
 	"devDependencies": {
@@ -29,6 +33,7 @@
 		"tsup": "^6.7.0",
 		"tsx": "^3.12.6",
 		"typescript": "^5.0.4",
+		"supertest": "^6.3.3",
 		"vitest": "^0.30.1"
 	}
 }
