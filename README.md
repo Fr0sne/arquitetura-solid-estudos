@@ -66,7 +66,7 @@ app.register(userRoute, { prefix: 'api'})
 ```
 ## Criar rotas aninhadas:
 ```js
-// generalRoutes.ts
+// newRoute.ts
 export async function newRoute(app: FastifyInstance){
 	app.get('/', (req, rep) => {
 		rep.send('New route!')
