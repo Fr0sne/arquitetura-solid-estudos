@@ -17,8 +17,6 @@ app.setErrorHandler((error, request, reply) => {
 
 app.register(routes);
 
-
-
 if (process.env.NODE_ENV !== 'test') {
 	app.listen({ port: 3333 }, () => console.log('Server running at 3333'));
 }

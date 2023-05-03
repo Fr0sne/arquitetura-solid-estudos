@@ -3,7 +3,9 @@ import { createUserController } from '../../http/controllers/user/create-user-co
 import { findUserController } from '../../http/controllers/user/get-user-controller';
 
 export async function usersRoutes(app: FastifyInstance) {
+
 	app.post('/', createUserController);
 
 	app.get('/:id', findUserController);
+
 }
