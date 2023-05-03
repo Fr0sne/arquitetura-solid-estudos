@@ -1,7 +1,7 @@
 import { FastifyReply, FastifyRequest } from 'fastify';
 import { getUserFactory } from '../../../use-cases/user/factories/get-user-factory';
 
-export function getUserController(request: FastifyRequest, reply: FastifyReply) {
+export function findUserController(request: FastifyRequest, reply: FastifyReply) {
 
 	const getUserUseCase = getUserFactory();
 

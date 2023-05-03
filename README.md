@@ -85,4 +85,11 @@ app.register(userRoute, { prefix: 'api'})
 ```
 ## Testes
 
+- Para facilitar os testes, podemos ler a variável ambiente NODE_ENV, e criar uma condição que define se a aplicação será colocada em listening ou não. Ex.:
+```js
+if (process.env.NODE_ENV !== 'test') {
+	app.listen({ port: 3333 }, () => console.log('Server running at 3333'));
+}
+```
+
 - Teste de integração 

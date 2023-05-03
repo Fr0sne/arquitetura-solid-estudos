@@ -2,6 +2,7 @@ import { expect, it, vitest, describe, beforeEach } from 'vitest';
 import { InMemoryUserRepository, users } from '../../repositories/user/inmemory-repository';
 import { RegisterUserUseCase } from './register-user-usecase';
 import { UserAlreadyExistsError } from './errors/user-already-exists-error';
+import { GenericZodError } from '../../errors/generic-zod-error';
 
 beforeEach(() => {
 	users.splice(0, users.length);
@@ -36,4 +37,6 @@ describe('register user usecase test', () => {
 		return expect(() => sut.execute(data)).toThrowError(UserAlreadyExistsError);
 
 	});
+
+
 });

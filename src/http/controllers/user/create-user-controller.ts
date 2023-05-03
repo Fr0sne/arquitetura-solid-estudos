@@ -22,5 +22,5 @@ export async function createUserController(request: FastifyRequest, reply: Fasti
 
 	const user = registerUseCase.execute(params.data);
 
-	reply.send(user);
+	reply.status(201).send(user);
 }
