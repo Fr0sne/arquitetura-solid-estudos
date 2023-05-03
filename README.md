@@ -83,22 +83,23 @@ const app = fastify();
 app.register(userRoute, { prefix: 'api'})
 
 ```
-## Testes
+# Testes
 
 ### Keywords importantes para testes:
+```js
+expect(statusCode).toBe(200)
 
-- expect(statusCode).toBe(200)
+expect(body).toMatchObject({name: 'Gabriel'})
 
-- expect(body).toMatchObject({name: 'Gabriel'})
+except(result).toBe(expect.any(String))
 
-- except(result).toBe(expect.any(String))
+expect(body).toMatchObject({id: expect.any(String), name: 'Gabriel'})
 
-- expect(body).toMatchObject({id: expect.any(String), name: 'Gabriel'})
+expect(() => function...).toThrowError(InstanceOfError)
+```
 
-- expect(() => function...).toThrowError(InstanceOfError)
 
-- ...
-
+### Tips
 - Para facilitar os testes, podemos ler a variável ambiente NODE_ENV, e criar uma condição que define se a aplicação será colocada em listening ou não. Toda vez que nossa aplicação é iniciada através de um arquivo de testes, essa variável ambiente automaticamente recebe o valor de "test". Ex.:
 ```js
 if (process.env.NODE_ENV !== 'test') {
