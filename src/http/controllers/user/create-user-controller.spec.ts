@@ -31,10 +31,6 @@ describe('create user controller test', () => {
 
 		const res = await http.inject().post('/users/').headers(headers).body(data);
 
-
-
-
-
 		expect(res.statusCode).toBe(400);
 
 	});
