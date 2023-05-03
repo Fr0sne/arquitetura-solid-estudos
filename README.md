@@ -10,7 +10,7 @@ eslint - Organizador para manter um padrão de código
 
 .eslintignore - Ignora pastas selecionadas ao formatar o código do projeto.
 
-zod - Valida os dados de entrada do usuário na nossa aplicação.
+zod - Valida os dados de entrada do usuário na nossa aplicação. Testar coerce para converter dados
 
 fastify-error-handler: é um plugin para o Fastify que adiciona a funcionalidade de lidar com erros de forma centralizada no aplicativo.
 
