@@ -14,6 +14,8 @@ zod - Valida os dados de entrada do usuário na nossa aplicação. Testar coerce
 
 fastify-error-handler: é um plugin para o Fastify que adiciona a funcionalidade de lidar com erros de forma centralizada no aplicativo.
 
+
+npm ci -> clean install, não tem nada a ver com continuos integration
 # Tips para estruturar com SOLID
 
 - Validação de Entrada de Dados podem ficar no controller (comparação de senha, validação Zod etc.)
